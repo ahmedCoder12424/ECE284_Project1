@@ -1,0 +1,36 @@
+470.lbm,  block_size = 128, L2_ASSOC = default, INST= "1000000"
+
+458.sjeng,    block_size = “128”, MAX_INST = "1000000"
+L1_SIZE = ("256kB", "256kB")
+L2_SIZE = "4MB"
+L1I_ASSOC = "8"
+L1D_ASSOC=”8”
+L2_ASSOC = “8”
+
+
+456.hmmer,  MAX_INST = "100000000"
+L1_SIZE
+  ("256kB", "128kB"),
+    ("256kB", "256kB")
+L1I_ASSOC,     “ 2","4","8"
+L1D_Assoc = “4"
+CACHE_LINE = “128”
+
+429.mcf, MAX_INST = "100000000", 
+L1_SIZE
+ ("256kB", "128kB"),
+    ("256kB", "256kB")
+
+L2_SIZE = "4MB"
+L1D_ASSOC = "8"
+BLOCK_SIZE = “128”
+
+
+
+401.bzip2 , MAX_INST = "100000000",
+L1_SIZE =  ("256kB", "128kB"),
+    ("256kB", "256kB")
+L2_SIZE = "4MB"
+L1D_ASSOC = "8"
+L2_ASSOC = "8"
+BLOCK_SIZE = “128”
