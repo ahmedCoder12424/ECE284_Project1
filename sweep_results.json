@@ -1,0 +1,588 @@
+{
+  "401.bzip2": {
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"2\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "2",
+        "l1i_assoc": "8",
+        "l2_size": "512kB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 2.2655353257860478
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"1\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "2",
+        "l1d_assoc": "1",
+        "l1i_assoc": "8",
+        "l2_size": "1MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "4",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "8",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 2.2432206048750314
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"2\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "2",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 2.2369080929353986
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"256kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "256kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 2.2524315621718927
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "8",
+        "l1i_assoc": "4",
+        "l2_size": "1MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"32\", \"l1d_assoc\": \"4\", \"l1d_size\": \"256kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"8\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "32",
+        "l2_assoc": "8",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "256kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 3.3031716072654618
+    }
+  },
+  "429.mcf": {
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"2\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "2",
+        "l1i_assoc": "8",
+        "l2_size": "512kB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.052876055069285
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"1\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "2",
+        "l1d_assoc": "1",
+        "l1i_assoc": "8",
+        "l2_size": "1MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "4",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "8",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0499784347956589
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"2\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "2",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 1.0493701431353377
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"256kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "256kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 1.0524935003141107
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "8",
+        "l1i_assoc": "4",
+        "l2_size": "1MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"32\", \"l1d_assoc\": \"4\", \"l1d_size\": \"256kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"8\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "32",
+        "l2_assoc": "8",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "256kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 1.0881756911112748
+    }
+  },
+  "456.hmmer": {
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"2\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "2",
+        "l1i_assoc": "8",
+        "l2_size": "512kB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0055776058886572
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"1\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "2",
+        "l1d_assoc": "1",
+        "l1i_assoc": "8",
+        "l2_size": "1MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "4",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "8",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0053748464016385
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"2\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "2",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 1.005166226929446
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"256kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "256kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 1.0037632704789257
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "8",
+        "l1i_assoc": "4",
+        "l2_size": "1MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"32\", \"l1d_assoc\": \"4\", \"l1d_size\": \"256kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"8\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "32",
+        "l2_assoc": "8",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "256kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 1.0069628623839582
+    }
+  },
+  "458.sjeng": {
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"2\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "2",
+        "l1i_assoc": "8",
+        "l2_size": "512kB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 5.646514927994324
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"1\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "2",
+        "l1d_assoc": "1",
+        "l1i_assoc": "8",
+        "l2_size": "1MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "4",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "8",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 5.646464028081872
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"2\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "2",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 5.646316008336465
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"256kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "256kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 5.6463007683626785
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "8",
+        "l1i_assoc": "4",
+        "l2_size": "1MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    }
+  },
+  "470.lbm": {
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"2\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "2",
+        "l1i_assoc": "8",
+        "l2_size": "512kB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.8589304769358022
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"1\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"8\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "2",
+        "l1d_assoc": "1",
+        "l1i_assoc": "8",
+        "l2_size": "1MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"384kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "4",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "384kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "1",
+        "l1d_assoc": "8",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.8589312567487561
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"128kB\", \"l1i_assoc\": \"2\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "2",
+        "l2_size": "2MB",
+        "l1d_size": "128kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 1.8589303569645783
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"256kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"256kB\", \"l2_assoc\": \"2\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "256kB",
+        "l1i_size": "256kB"
+      },
+      "CPI": 1.8589311967631446
+    },
+    "{\"cache_line\": \"128\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"1\", \"l2_size\": \"512kB\"}": {
+      "params": {
+        "cache_line": "128",
+        "l2_assoc": "1",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "512kB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"8\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"4\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"1MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "8",
+        "l1i_assoc": "4",
+        "l2_size": "1MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    },
+    "{\"cache_line\": \"64\", \"l1d_assoc\": \"4\", \"l1d_size\": \"384kB\", \"l1i_assoc\": \"1\", \"l1i_size\": \"128kB\", \"l2_assoc\": \"2\", \"l2_size\": \"2MB\"}": {
+      "params": {
+        "cache_line": "64",
+        "l2_assoc": "2",
+        "l1d_assoc": "4",
+        "l1i_assoc": "1",
+        "l2_size": "2MB",
+        "l1d_size": "384kB",
+        "l1i_size": "128kB"
+      },
+      "CPI": 1.0
+    }
+  }
+}
