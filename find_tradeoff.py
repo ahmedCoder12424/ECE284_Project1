@@ -15,11 +15,11 @@ import re
 
 #sys.exit(0)
 #calculate CPI
-def calculate_CPI(benchmark, L1D_SIZE="128kB", L1I_SIZE="128kB", L2_SIZE="1MB", L1D_ASSOC="2", L1I_ASSOC="2", L2_ASSOC="1", CACHE_LINE="64"):
+def calculate_CPI(benchmark, L1D_SIZE="128kB", L1I_SIZE="128kB", L2_SIZE="1MB", L1D_ASSOC="2", L1I_ASSOC="2", L2_ASSOC="1", CACHE_LINE="64",MAX_INST="100000000", CPU_TYPE="TimingSimpleCPU"):
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     script_path = os.path.join(base_dir, "runGem5_param.sh")
-    subprocess.run([script_path, benchmark, L1D_SIZE, L1I_SIZE, L2_SIZE, L1D_ASSOC, L1I_ASSOC, L2_ASSOC, CACHE_LINE ])
+    subprocess.run([script_path, benchmark, L1D_SIZE, L1I_SIZE, L2_SIZE, L1D_ASSOC, L1I_ASSOC, L2_ASSOC, CACHE_LINE, MAX_INST, CPU_TYPE ])
     stats = { '401.bzip2' : "401.bzip2/m5out/stats.txt",
               '429.mcf': "429.mcf/m5out/stats.txt",
               '456.hmmer': "456.hmmer/m5out/stats.txt",
@@ -153,7 +153,6 @@ with open("tradeoff_results.txt", "a") as file:
     for row in l2size_results:
         file.write(",".join(map(str, row)) + "\n")
         
-"""
 l1size_results = []
 for benchmark in benchmarks:
     result = [benchmark]
@@ -175,7 +174,49 @@ with open("tradeoff_results.txt", "a") as file:
     for row in l1size_results:
         file.write(",".join(map(str, row)) + "\n")
 """
+inst_results = []
+for benchmark in benchmarks:
+    result = [benchmark]
+    sizes = sizes = [
+    "1000",
+    "10000",
+    "100000",
+    "1000000",
+   "10000000",
+    "100000000",
+]
+    for size in sizes:
+        cpi = calculate_CPI(benchmark,MAX_INST=size)
+        result.append(cpi)
+    inst_results.append(result)
 
+print("INST SWEEP RESULTS")
+print()
+print(inst_results)
+with open("tradeoff_results.txt", "a") as file:
+    file.write("INST RESULTS\n")
+    for row in inst_results:
+        file.write(",".join(map(str, row)) + "\n")
+        
+cpu_results = []
+for benchmark in benchmarks:
+    result = [benchmark]
+    cpus ["TimingSimpleCPU", "DerivO3CPU", "X86MinorCPU"]
+    for cpu in cpus:
+        cpi = calculate_CPI(benchmark,CPU_TYPE = cpu)
+        result.append(cpi)
+    cpu_results.append(result)
+
+print("CPU SWEEP RESULTS")
+print(["TimingSimpleCPU", "DerivO3CPU", "X86MinorCPU"])
+print(cpu_results)
+with open("tradeoff_results.txt", "a") as file:
+    file.write("CPU RESULTS\n")
+    for row in cpu_results:
+        file.write(",".join(map(str, row)) + "\n")
+
+
+"""
 print("BLOCK RESULTS")
 print(["16","32","64","128"])
 print(block_results)
