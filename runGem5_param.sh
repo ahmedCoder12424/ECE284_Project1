@@ -61,7 +61,7 @@ fi
 mkdir -p $OUT_DIR
 
 # Students can edit these variables to optimize their CPI
-CPU_TYPE=$10 #TimingSimpleCPU
+CPU_TYPE=${10} #TimingSimpleCPU
 #CPU_TYPE=DerivO3CPU
 #CPU_TYPE=X86MinorCPU       
 MAX_INST=$9   
