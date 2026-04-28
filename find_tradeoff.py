@@ -63,7 +63,9 @@ def calculate_CPI(benchmark, L1D_SIZE="128kB", L1I_SIZE="128kB", L2_SIZE="1MB", 
     
 #print(results)
     
-benchmarks = ["401.bzip2","429.mcf", "456.hmmer", "458.sjeng", "470.lbm"]
+#benchmarks = ["401.bzip2","429.mcf", "456.hmmer", "458.sjeng", "470.lbm"]
+benchmarks = ["470.lbm"]
+output_file = "tradeoff_results_470.txt"
 import os 
 
 #test_block_size
@@ -78,7 +80,7 @@ for benchmark in benchmarks:
     block_results.append(result)
 print("BLOCK RESULTS")
 print(block_results)
-with open("tradeoff_results.txt", "w") as file:
+with open(output_file, "a") as file:
     file.write("BLOCK RESULTS\n")
 
     for row in block_results:
@@ -97,7 +99,7 @@ for benchmark in benchmarks:
 print("L2 ASSOC RESULTS")
 print(["1","2","4","8"])
 print(l2assoc_results)
-with open("tradeoff_results.txt", "a") as file:
+with open(output_file, "a") as file:
     file.write("L2 ASSOC RESULTS\n")
     for row in l2assoc_results:
         file.write(",".join(map(str, row)) + "\n")
@@ -113,7 +115,7 @@ for benchmark in benchmarks:
 print("L1D ASSOC RESULTS")
 print(["1","2","4","8"])
 print(l1dassoc_results)
-with open("tradeoff_results.txt", "a") as file:
+with open(output_file, "a") as file:
     file.write("L1D ASSOC RESULTS\n")
     file.write(",".join(["1","2","4","8"]))
     for row in l1dassoc_results:
@@ -129,7 +131,7 @@ for benchmark in benchmarks:
     l1iassoc_results.append(result)
 print("L1i ASSOC RESULTS")
 print(l1iassoc_results)
-with open("tradeoff_results.txt", "a") as file:
+with open(output_file, "a") as file:
     file.write("L1I ASSOC RESULTS\n")
     file.write(",".join(["1","2","4","8"]))
     for row in l1iassoc_results:
@@ -147,7 +149,7 @@ for benchmark in benchmarks:
     l2size_results.append(result)
 print("L2 SIZE RESULTS")
 print(l2size_results)
-with open("tradeoff_results.txt", "a") as file:
+with open(output_file, "a") as file:
     file.write("L2 SIZE RESULTS\n")
     file.write(",".join(["512kB", "1MB", "2MB", "4MB"]))
     for row in l2size_results:
@@ -169,11 +171,11 @@ for benchmark in benchmarks:
 print("L1 Icache and Dcache SIZE RESULTS")
 print([("128kB", "384kB"), ("256kB", "256kB"),("384kB", "128kB")])
 print(l1size_results)
-with open("tradeoff_results.txt", "a") as file:
+with open(output_file, "a") as file:
     file.write("L1 SIZE RESULTS\n")
     for row in l1size_results:
         file.write(",".join(map(str, row)) + "\n")
-"""
+
 inst_results = []
 for benchmark in benchmarks:
     result = [benchmark]
@@ -193,30 +195,31 @@ for benchmark in benchmarks:
 print("INST SWEEP RESULTS")
 print()
 print(inst_results)
-with open("tradeoff_results.txt", "a") as file:
+with open(output_file, "a") as file:
     file.write("INST RESULTS\n")
     for row in inst_results:
         file.write(",".join(map(str, row)) + "\n")
+
         
 cpu_results = []
 for benchmark in benchmarks:
     result = [benchmark]
-    cpus ["TimingSimpleCPU", "DerivO3CPU", "X86MinorCPU"]
+    cpus=["TimingSimpleCPU", "DerivO3CPU", "X86MinorCPU"]
     for cpu in cpus:
-        cpi = calculate_CPI(benchmark,CPU_TYPE = cpu)
+        cpi = calculate_CPI(benchmark, CPU_TYPE=cpu)
         result.append(cpi)
     cpu_results.append(result)
 
 print("CPU SWEEP RESULTS")
 print(["TimingSimpleCPU", "DerivO3CPU", "X86MinorCPU"])
 print(cpu_results)
-with open("tradeoff_results.txt", "a") as file:
+with open("tradeoff_results_470.txt", "a") as file:
     file.write("CPU RESULTS\n")
     for row in cpu_results:
         file.write(",".join(map(str, row)) + "\n")
 
 
-"""
+
 print("BLOCK RESULTS")
 print(["16","32","64","128"])
 print(block_results)
@@ -248,10 +251,18 @@ for benchmark in benchmarks:
     results.append([benchmark,cpi])
 print("optimized cpi", results)
 """   
-#print(calculate_CPI("456.hmmer", L1D_SIZE="256kB", L1I_SIZE="4MB", CACHE_LINE="128")) 
+print("OPTIMAL CONFIGURATIONS")
 
+opt_results = []
+opt_results.append(["470.lbm", calculate_CPI("470.lbm",CACHE_LINE="128", MAX_INST="100000000")]) 
 
+opt_results.append(["458.sjeng", calculate_CPI("458.sjeng", L1I_SIZE="256kB", L1D_SIZE="256kB", L2_SIZE = "4MB", L1D_ASSOC="8",L1I_ASSOC= "8",L2_ASSOC = "8", CACHE_LINE="128", MAX_INST="100000000")]) 
 
+opt_results.append(["456.hmmer", calculate_CPI("456.hmmer", L1D_SIZE="256kB", L1I_SIZE="256kB", L1D_ASSOC="4",L1I_ASSOC="8", CACHE_LINE="128", MAX_INST = "100000000")])
+opt_results.append(["429.mcf", calculate_CPI("429.mcf",  L1D_SIZE="256kB", L1I_SIZE="256kB", L2_SIZE="4MB", L1D_ASSOC ="8", L2_ASSOC="8", CACHE_LINE="128", MAX_INST="100000000")]) 
+
+opt_results.append(["401.bzip2", calculate_CPI("401.bzip2", L1D_SIZE="256kB", L1I_SIZE="256kB",L2_SIZE="4MB",L1D_ASSOC="8",L2_ASSOC="8", CACHE_LINE="128", #MAX_INST = "100000000")]) 
+print(opt_results)
 
 
 
